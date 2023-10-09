@@ -1,0 +1,15 @@
+MCD 
+Entité:
+Ligue = (ID_Ligue VARCHAR(50), NomLigue VARCHAR(50));
+Administrateur = (NumAdmin VARCHAR(50), NomAdmin VARCHAR(50));
+Employe = (NumEmploye VARCHAR(50), NomEmploye VARCHAR(50), #ID_Ligue);
+Super_Admin = (NumSuperAdmin VARCHAR(50), NomSA VARCHAR(50));
+Application = (NumApp VARCHAR(50), Type VARCHAR(50));
+
+Association
+Gerer = (#NumAdmin, #NumSuperAdmin);
+Administrer = (#ID_Ligue, #NumAdmin);
+Manipuler = (#NumAdmin, #NumApp);
+Utiliser = (#NumEmploye, #NumApp);
+
+

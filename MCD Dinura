@@ -1,12 +1,13 @@
 Code Mocodo : 
 
-ADMINISTRATEUR: droit-employé
+
+ADMINISTRATEUR: droit-employé, droit écriture
 /XT\ EMPLOYE<= ADMINISTRATEUR, SUPER-ADMINISTRATEUR
 EMPLOYE: Id_Employe, Nom_Employe 
 OUVRIR, 0N EMPLOYE, 0N APPLICATION
 APPLICATION: Id_Appli,Nom_Appli
 
-SUPER-ADMINISTRATEUR: droit-tout-employé
+SUPER-ADMINISTRATEUR: droit-tout-employé, droit écriture
 ENTRETENIR, 0N EMPLOYE, 0N LIGUE
 
 :
